@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import "palette.js" as Palette
+import "../JS/palette.js" as Palette
 
 Rectangle {
     width: 1

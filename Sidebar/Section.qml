@@ -2,8 +2,8 @@ import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
 import "../Common"
-import "../Common/palette.js" as Palette
-import "../Common/resolutionHelperTools.js" as RHT
+import "../JS/palette.js" as Palette
+import "../JS/resolutionHelperTools.js" as RHT
 
 Item {
     id: section

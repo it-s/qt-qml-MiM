@@ -1,9 +1,9 @@
 import QtQuick 2.0
 
 import "../Common"
-import "../Common/palette.js" as Palette
-import "../Common/fonts.js" as Fonts
-import "../Common/resolutionHelperTools.js" as RHT
+import "../JS/palette.js" as Palette
+import "../JS/fonts.js" as Fonts
+import "../JS/resolutionHelperTools.js" as RHT
 
 SectionItem {
     height: 20

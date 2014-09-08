@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import "../Common"
-import "../Common/palette.js" as Palette
+import "../JS/palette.js" as Palette
 
 Item {
     id: toolbarContainer

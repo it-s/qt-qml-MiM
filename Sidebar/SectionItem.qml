@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../Common/palette.js" as Palette
+import "../JS/palette.js" as Palette
 
 Rectangle {
     width: 240

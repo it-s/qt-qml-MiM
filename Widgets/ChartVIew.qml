@@ -3,8 +3,8 @@ import QtQuick.Layouts 1.1
 
 import "../Data"
 import "../Common"
-import "../Common/palette.js" as Palette
-import "../Common/fonts.js" as Fonts
+import "../JS/palette.js" as Palette
+import "../JS/fonts.js" as Fonts
 
 Flickable {
     id: viewContainer

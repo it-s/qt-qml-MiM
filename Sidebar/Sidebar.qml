@@ -3,7 +3,7 @@ import QtQuick.Layouts 1.1
 
 import "../Data"
 import "../Common"
-import "../Common/palette.js" as Palette
+import "../JS/palette.js" as Palette
 
 Rectangle {
     id: sidebar

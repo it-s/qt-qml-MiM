@@ -2,9 +2,9 @@ import QtQuick 2.0
 
 import "./"
 
-import "fonts.js" as Fonts
-import "palette.js" as Palette
-import "resolutionHelperTools.js" as RHT
+import "../JS/fonts.js" as Fonts
+import "../JS/palette.js" as Palette
+import "../JS/resolutionHelperTools.js" as RHT
 
 MouseArea {
     id: buttonContainer

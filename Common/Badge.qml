@@ -2,9 +2,10 @@ import QtQuick 2.0
 
 import "./"
 
-import "palette.js" as Palette
-import "fonts.js" as Fonts
-import "resolutionHelperTools.js" as RHT
+import "../JS/helpers.js" as Helpers
+import "../JS/palette.js" as Palette
+import "../JS/fonts.js" as Fonts
+import "../JS/resolutionHelperTools.js" as RHT
 
 Rectangle{
     id: bage
@@ -12,8 +13,7 @@ Rectangle{
     property bool inverse: false
     property alias text: bageText.text
 
-
-    width: bageText.paintedWidth+15
+    width: Helpers.clamp(bageText.paintedWidth+15, 28)
     height: bageText.paintedHeight+5
     radius: height/2
 

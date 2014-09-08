@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
-import "fonts.js" as Fonts
-import "palette.js" as Palette
+import "../JS/fonts.js" as Fonts
+import "../JS/palette.js" as Palette
 
 Text {
     font.family: Fonts.BASE_FONT

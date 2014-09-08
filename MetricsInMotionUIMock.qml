@@ -9,14 +9,15 @@ import "Browser"
 import "Sidebar"
 import "Widgets"
 
-import "Common/palette.js" as Palette
+import "JS/palette.js" as Palette
+import "JS/resolutionHelperTools.js" as RHT
 
 Window {
     id: window
-    width: 1300
-    height: 760
-    minimumWidth: 600
-    minimumHeight: 400
+    width: RHT.em(130)
+    height: RHT.em(76)
+    minimumWidth: RHT.em(60)
+    minimumHeight: RHT.em(40)
 
     property variant definition: {
         "intendedResolution": {
