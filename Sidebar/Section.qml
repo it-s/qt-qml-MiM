@@ -3,7 +3,6 @@ import QtQuick.Layouts 1.1
 
 import "../Common"
 import "../JS/palette.js" as Palette
-import "../JS/resolutionHelperTools.js" as RHT
 
 Item {
     id: section

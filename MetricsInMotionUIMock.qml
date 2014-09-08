@@ -7,34 +7,36 @@ import "Common"
 import "Browser"
 
 import "Sidebar"
-import "Widgets"
+//import "Widgets"
 
 import "JS/palette.js" as Palette
-import "JS/resolutionHelperTools.js" as RHT
+import "JS/helpers.js" as Helpers
 
 Window {
     id: window
-    width: RHT.em(130)
-    height: RHT.em(76)
-    minimumWidth: RHT.em(60)
-    minimumHeight: RHT.em(40)
+    width: Helpers.em(130)
+    height: Helpers.em(76)
+    minimumWidth: Helpers.em(60)
+    minimumHeight: Helpers.em(40)
 
-    property variant definition: {
-        "intendedResolution": {
-            "width": 1600,
-            "height": 900
-        },
-        "currentResolution": {
-            "width": Screen.width,
-            "height": Screen.height
-        }
+    property double scale: Helpers.computeScale({
+                                                    intendedResolution: {
+                                                        width: 1680,
+                                                        height: 1050
+                                                    },
+                                                    currentResolution: {
+                                                        width: Screen.width,
+                                                        height: Screen.height
+                                                    }
+                                                })
+
+    property string baseTitle: "METRICS.IM"
+
+    title: "METRICS.IM"
+
+    function setTitle(title) {
+        window.title = window.baseTitle + " " + title
     }
-
-    Component.onCompleted: {
-        RHT.init(window)
-    }
-
-    title: "metrics.im MOCKUP"
 
     Fonts {
     } //Load custom and icon fonts
@@ -60,16 +62,11 @@ Window {
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
             }
-            WidgetView {
-                Layout.fillWidth: true
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-            }
+//            WidgetView {
+//                Layout.fillWidth: true
+//                anchors.top: parent.top
+//                anchors.bottom: parent.bottom
+//            }
         }
-
-//        OverlayContainer{
-//            anchors.fill: parent
-//        }
     }
-
 }

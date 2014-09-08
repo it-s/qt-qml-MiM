@@ -5,7 +5,6 @@ import "./"
 import "../JS/helpers.js" as Helpers
 import "../JS/palette.js" as Palette
 import "../JS/fonts.js" as Fonts
-import "../JS/resolutionHelperTools.js" as RHT
 
 Rectangle{
     id: bage

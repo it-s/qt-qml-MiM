@@ -4,7 +4,6 @@ import "./"
 
 import "../JS/fonts.js" as Fonts
 import "../JS/palette.js" as Palette
-import "../JS/resolutionHelperTools.js" as RHT
 
 MouseArea {
     id: buttonContainer

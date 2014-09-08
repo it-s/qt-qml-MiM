@@ -4,7 +4,6 @@ import QtQuick.Layouts 1.1
 import "../Common"
 import "../JS/palette.js" as Palette
 import "../JS/fonts.js" as Fonts
-import "../JS/resolutionHelperTools.js" as RHT
 
 Column {
     width: 800
